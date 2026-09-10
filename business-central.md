@@ -10,9 +10,7 @@ permalink: /business-central/
 {% assign posts = site.business-central | sort: "date" | reverse %}
 {% assign grouped = posts | group_by_exp: "post", "post.date | date: '%B %Y'" %}
 {% for group in grouped %}
-{% assign first_post = group.items | first %}
-{% assign month_slug = first_post.date | date: "%Y-%m" %}
-<h2><a href="{{ '/business-central/' | append: month_slug | append: '/' | relative_url }}">{{ group.name }}</a></h2>
+<h2>{{ group.name }}</h2>
 <ul>
 {% for post in group.items %}
 <li><span>{{ post.date | date: "%m/%d/%Y" }}</span> — <a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>

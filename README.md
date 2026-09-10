@@ -30,8 +30,7 @@ Each collection contains `YYYY-MM` subfolders with that month's posts. Each them
    ---
    ```
 3. Write the content in Markdown below the front matter.
-4. **If this is the first post of a new month for that theme**, create a month archive page at the repo root, named `<theme>-<YYYY-MM>.md`, with `permalink: /<theme>/<YYYY-MM>/` (copy an existing one, e.g. `azure-2026-09.md`, and update the collection name/dates). The theme's landing page (e.g. `azure.md`) automatically links its month headings to this page.
-5. Commit and push: GitHub Pages rebuilds the site automatically.
+4. Commit and push: GitHub Pages rebuilds the site automatically.
 
 ## Publishing
 
