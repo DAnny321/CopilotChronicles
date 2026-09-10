@@ -10,7 +10,7 @@ A Jekyll blog (GitHub Pages) with the latest news from the world of Copilot, org
 - `_business-central/` — Business Central Copilot news
 - `_azure/` — Azure news
 
-Each collection contains subfolders (by month, or by sub-topic) with that period/topic's posts.
+Each collection contains `YYYY-MM` subfolders with that month's posts. Each theme also has a landing page (e.g. `/github-copilot/`) that lists its posts grouped by month.
 
 ## How to add a new post (manual)
 
@@ -19,7 +19,7 @@ Each collection contains subfolders (by month, or by sub-topic) with that period
    - Copilot Studio / M365 Copilot: https://www.microsoft.com/en-us/microsoft-365/blog/
    - Business Central: https://www.microsoft.com/en-us/dynamics-365/blog/ (filter for "Business Central"/"Copilot")
    - Azure: https://azure.microsoft.com/en-us/blog/
-2. Create a file `_<theme>/<sub-topic-or-YYYY-MM>/<YYYY-MM-DD>-<slug>.md` with this front matter:
+2. Create a file `_<theme>/<YYYY-MM>/<YYYY-MM-DD>-<slug>.md` with this front matter:
    ```yaml
    ---
    title: "Post title"
