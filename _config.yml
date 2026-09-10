@@ -22,6 +22,15 @@ collections:
     output: true
     permalink: /azure/:year/:month/:title/
 
+# Tell jekyll-feed to pull entries from our custom collections, not just _posts/
+feed:
+  collections:
+    - github-copilot
+    - copilot-studio
+    - m365-copilot
+    - business-central
+    - azure
+
 defaults:
   - scope:
       path: ""
