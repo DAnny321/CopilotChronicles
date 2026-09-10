@@ -10,7 +10,8 @@ permalink: /copilot-studio/
 {% assign posts = site.copilot-studio | sort: "date" | reverse %}
 {% assign grouped = posts | group_by_exp: "post", "post.date | date: '%B %Y'" %}
 {% for group in grouped %}
-{% assign month_slug = group.items[0].date | date: "%Y-%m" %}
+{% assign first_post = group.items | first %}
+{% assign month_slug = first_post.date | date: "%Y-%m" %}
 <h2><a href="{{ '/copilot-studio/' | append: month_slug | append: '/' | relative_url }}">{{ group.name }}</a></h2>
 <ul>
 {% for post in group.items %}
