@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} - {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <header class="site-header">
+    <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    <nav>
+      <a href="{{ '/github-copilot/' | relative_url }}">GitHub Copilot</a>
+      <a href="{{ '/copilot-studio/' | relative_url }}">Copilot Studio</a>
+      <a href="{{ '/m365-copilot/' | relative_url }}">M365 Copilot</a>
+      <a href="{{ '/business-central/' | relative_url }}">Business Central</a>
+      <a href="{{ '/azure/' | relative_url }}">Azure</a>
+    </nav>
+  </header>
+  <main class="page-content">
+    {{ content }}
+  </main>
+  <footer class="site-footer">
+    <p>{{ site.title }} — generato con Jekyll + GitHub Pages.</p>
+  </footer>
+</body>
+</html>

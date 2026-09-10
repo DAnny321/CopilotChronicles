@@ -1,0 +1,59 @@
+title: "CopilotChronicles"
+description: "Le ultime novità dal mondo Copilot: GitHub Copilot, Microsoft Copilot Studio, Microsoft 365 Copilot, Copilot per Business Central e Azure."
+url: "https://DAnny321.github.io"
+baseurl: "/CopilotChronicles"
+lang: it
+
+# --- Collezioni: un tema = una collezione, organizzate per anno-mese ---
+collections:
+  github-copilot:
+    output: true
+    permalink: /github-copilot/:year/:month/:title/
+  copilot-studio:
+    output: true
+    permalink: /copilot-studio/:year/:month/:title/
+  m365-copilot:
+    output: true
+    permalink: /m365-copilot/:year/:month/:title/
+  business-central:
+    output: true
+    permalink: /business-central/:year/:month/:title/
+  azure:
+    output: true
+    permalink: /azure/:year/:month/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: "github-copilot"
+    values:
+      layout: "post"
+      theme_label: "GitHub Copilot"
+  - scope:
+      path: ""
+      type: "copilot-studio"
+    values:
+      layout: "post"
+      theme_label: "Copilot Studio"
+  - scope:
+      path: ""
+      type: "m365-copilot"
+    values:
+      layout: "post"
+      theme_label: "Microsoft 365 Copilot"
+  - scope:
+      path: ""
+      type: "business-central"
+    values:
+      layout: "post"
+      theme_label: "Copilot per Business Central"
+  - scope:
+      path: ""
+      type: "azure"
+    values:
+      layout: "post"
+      theme_label: "Azure"
+
+# GitHub Pages usa la build nativa Jekyll (Settings > Pages > Branch: main > Folder: / root)
+markdown: kramdown
+theme: minima
