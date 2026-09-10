@@ -1,8 +1,8 @@
-title: "CopilotChronicles"
-description: "Le ultime novità dal mondo Copilot: GitHub Copilot, Microsoft Copilot Studio, Microsoft 365 Copilot, Copilot per Business Central e Azure."
+title: "CopilotChronicles (Daniele Incalza)"
+description: "The latest news from the world of Copilot: GitHub Copilot, Microsoft Copilot Studio, Microsoft 365 Copilot, Business Central Copilot, and Azure."
 url: "https://DAnny321.github.io"
 baseurl: "/CopilotChronicles"
-lang: it
+lang: en
 
 # --- Collezioni: un tema = una collezione, organizzate per anno-mese ---
 collections:
@@ -46,7 +46,7 @@ defaults:
       type: "business-central"
     values:
       layout: "post"
-      theme_label: "Copilot per Business Central"
+      theme_label: "Business Central Copilot"
   - scope:
       path: ""
       type: "azure"
@@ -54,6 +54,6 @@ defaults:
       layout: "post"
       theme_label: "Azure"
 
-# GitHub Pages usa la build nativa Jekyll (Settings > Pages > Branch: main > Folder: / root)
+# GitHub Pages uses the native Jekyll build (Settings > Pages > Branch: main > Folder: / root)
 markdown: kramdown
 theme: minima

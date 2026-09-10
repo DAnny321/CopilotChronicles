@@ -1,37 +1,37 @@
-# CopilotChronicles
+# CopilotChronicles (Daniele Incalza)
 
-Blog Jekyll (GitHub Pages) con le ultime novità sul mondo Copilot, organizzato per tema e per mese.
+A Jekyll blog (GitHub Pages) with the latest news from the world of Copilot, organized by theme and by month.
 
-## Struttura
+## Structure
 
-- `_github-copilot/` — novità GitHub Copilot
-- `_copilot-studio/` — novità Microsoft Copilot Studio
-- `_m365-copilot/` — novità Microsoft 365 Copilot
-- `_business-central/` — novità Copilot in Business Central
-- `_azure/` — novità Azure
+- `_github-copilot/` — GitHub Copilot news
+- `_copilot-studio/` — Microsoft Copilot Studio news
+- `_m365-copilot/` — Microsoft 365 Copilot news
+- `_business-central/` — Business Central Copilot news
+- `_azure/` — Azure news
 
-Ogni collezione contiene sottocartelle `AAAA-MM` con i post del mese.
+Each collection contains subfolders (by month, or by sub-topic) with that period/topic's posts.
 
-## Come aggiungere un nuovo post (manuale)
+## How to add a new post (manual)
 
-1. Chiedi a GitHub Copilot un riassunto delle novità sulla fonte di interesse:
+1. Ask GitHub Copilot for a summary of the news from the source of interest:
    - GitHub Copilot: https://github.blog/changelog/label/copilot/
    - Copilot Studio / M365 Copilot: https://www.microsoft.com/en-us/microsoft-365/blog/
-   - Business Central: https://www.microsoft.com/en-us/dynamics-365/blog/ (filtra per "Business Central"/"Copilot")
+   - Business Central: https://www.microsoft.com/en-us/dynamics-365/blog/ (filter for "Business Central"/"Copilot")
    - Azure: https://azure.microsoft.com/en-us/blog/
-2. Crea un file `_<tema>/AAAA-MM/AAAA-MM-GG-titolo-breve.md` con questo front-matter:
+2. Create a file `_<theme>/<sub-topic-or-YYYY-MM>/<YYYY-MM-DD>-<slug>.md` with this front matter:
    ```yaml
    ---
-   title: "Titolo del post"
-   date: AAAA-MM-GG
+   title: "Post title"
+   date: YYYY-MM-DD
    tags: [tag1, tag2]
    source_url: "https://..."
-   source_name: "Nome fonte"
+   source_name: "Source name"
    ---
    ```
-3. Scrivi il contenuto in Markdown sotto il front-matter.
-4. Fai commit e push: GitHub Pages ricostruisce il sito automaticamente.
+3. Write the content in Markdown below the front matter.
+4. Commit and push: GitHub Pages rebuilds the site automatically.
 
-## Pubblicazione
+## Publishing
 
-Nessuna automazione: pubblicazione manuale via commit/push su GitHub. Abilita GitHub Pages da Settings > Pages, branch `main`, cartella `/ (root)`.
+No automation: manual publishing via commit/push to GitHub. Enable GitHub Pages from Settings > Pages, branch `main`, folder `/ (root)`.
