@@ -23,5 +23,20 @@
   <footer class="site-footer">
     <p>{{ site.title }} — built with Jekyll + GitHub Pages.</p>
   </footer>
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: false });
+    var blocks = document.querySelectorAll('pre code.language-mermaid, code.language-mermaid');
+    blocks.forEach(function (codeEl, i) {
+      var container = codeEl.closest('div.language-mermaid') || codeEl.parentElement;
+      var graphDefinition = codeEl.textContent;
+      mermaid.render('mermaid-diagram-' + i, graphDefinition).then(function (result) {
+        var wrapper = document.createElement('div');
+        wrapper.className = 'mermaid-rendered';
+        wrapper.innerHTML = result.svg;
+        container.replaceWith(wrapper);
+      });
+    });
+  </script>
 </body>
 </html>
